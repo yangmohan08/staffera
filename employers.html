@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Employers | Staffera</title>
+  <meta name="description" content="Hire the right talent—faster. Request a shortlist from Staffera." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">S</span><span class="brand-name">Staffera</span></a>
+      <nav class="nav">
+        <a class="active" href="employers.html">Employers</a>
+        <a href="candidates.html">Candidates</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container narrow">
+      <h1>Hire the right talent—faster.</h1>
+      <p class="lead">
+        Staffera supports Canadian employers with quality-first recruiting. Share your role requirements and we’ll work toward a vetted shortlist.
+      </p>
+
+      <div class="panel">
+        <h2>What we can support</h2>
+        <ul class="list">
+          <li>Permanent hiring (edit as needed)</li>
+          <li>Contract / temporary staffing (edit as needed)</li>
+          <li>Project-based hiring support</li>
+        </ul>
+      </div>
+
+      <div class="grid-2">
+        <div class="panel">
+          <h2>Our process</h2>
+          <ol class="steps">
+            <li>Intake call: role, must-haves, timeline</li>
+            <li>Sourcing and screening</li>
+            <li>Shortlist delivery</li>
+            <li>Interview coordination and offer support</li>
+          </ol>
+        </div>
+
+        <div class="panel">
+          <h2>What “vetted” means</h2>
+          <ul class="list">
+            <li>Experience and skills review</li>
+            <li>Role-fit conversation (as applicable)</li>
+            <li>Reference checks (if applicable)</li>
+            <li>Clear communication and expectations</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel" id="request">
+        <h2>Request talent</h2>
+        <p class="muted">This is a starter form. You can replace it later with a full intake form tool.</p>
+
+        <!-- Simple email-based “form” (works on static sites) -->
+        <form class="form" action="mailto:hire@staffera.ca" method="post" enctype="text/plain">
+          <div class="grid-2">
+            <label>
+              Company name
+              <input name="Company" required />
+            </label>
+            <label>
+              Contact email
+              <input type="email" name="Email" required />
+            </label>
+          </div>
+
+          <div class="grid-2">
+            <label>
+              Role title
+              <input name="Role" required />
+            </label>
+            <label>
+              Location
+              <input name="Location" placeholder="City/Province or Remote" />
+            </label>
+          </div>
+
+          <label>
+            Details
+            <textarea name="Details" rows="5" placeholder="Type of hire, timeline, must-have skills, etc."></textarea>
+          </label>
+
+          <button class="btn" type="submit">Send Request</button>
+          <p class="muted small">Or email us directly: <a href="mailto:hire@staffera.ca">hire@staffera.ca</a></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="muted small">© <span id="year"></span> Staffera</div>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

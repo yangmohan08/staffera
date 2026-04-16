@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Candidates | Staffera</title>
+  <meta name="description" content="Find the role that fits your skills. Submit your resume to Staffera." />
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html"><span class="brand-mark">S</span><span class="brand-name">Staffera</span></a>
+      <nav class="nav">
+        <a href="employers.html">Employers</a>
+        <a class="active" href="candidates.html">Candidates</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container narrow">
+      <h1>Find the role that fits your skills.</h1>
+      <p class="lead">
+        We connect professionals with opportunities across Canada. Submit your resume or LinkedIn and we’ll reach out if there’s a match.
+      </p>
+
+      <div class="panel">
+        <h2>How it works</h2>
+        <ol class="steps">
+          <li>Submit your resume/LinkedIn</li>
+          <li>Screening and matching (if selected)</li>
+          <li>Employer introductions</li>
+          <li>Interview and placement</li>
+        </ol>
+      </div>
+
+      <div class="panel" id="apply">
+        <h2>Submit your resume</h2>
+        <p class="muted">
+          Starter option: email your resume. (Later you can replace this with a proper upload form.)
+        </p>
+
+        <p>
+          Email: <a href="mailto:hire@staffera.ca?subject=Resume%20Submission%20-%20Staffera">hire@staffera.ca</a><br/>
+          Subject: <span class="code">Resume Submission - Staffera</span>
+        </p>
+
+        <div class="panel alt-panel">
+          <h3>What to include</h3>
+          <ul class="list">
+            <li>Resume (PDF preferred)</li>
+            <li>Role(s) you’re targeting</li>
+            <li>Location and availability</li>
+            <li>LinkedIn profile (optional)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>FAQ</h2>
+        <details>
+          <summary>Do you charge candidates?</summary>
+          <p class="muted">No (edit if needed). Our service is free for job seekers.</p>
+        </details>
+        <details>
+          <summary>Will you share my resume without permission?</summary>
+          <p class="muted">We will not share your information without a recruiting purpose and appropriate consent (edit to match your policy).</p>
+        </details>
+        <details>
+          <summary>What if I don’t hear back?</summary>
+          <p class="muted">If your profile matches a role we’re recruiting for, we’ll contact you. You can also send updates when your situation changes.</p>
+        </details>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="muted small">© <span id="year"></span> Staffera</div>
+    </div>
+  </footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
